@@ -10,11 +10,11 @@ Ciudad : <input #miCiudad><br>
     <li *ngFor= "let animal of animales">
         {{ animal }}
     </li>
-    <!-- <li>Java</li>
-    <li>Gatitos</li> -->
     </ul>
 </div>
 
-
-
-<router-outlet></router-outlet>
+<router-outlet>
+        <a routerLink="quienes" class="cont" >Quienes</a>
+        <a routerLink="contacto" class="cont">Contacto</a>
+        <a routerLink="producto" class="cont">Producto</a>
+</router-outlet>

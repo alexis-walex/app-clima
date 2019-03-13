@@ -12,6 +12,7 @@ export class AppComponent {
   public ciudades: Array<Ciudad> = [];
 
   animales: string[] = ['London', 'Java', 'Gatitos'];
+
   constructor(private apiTempService: ApiTempService) {}
 
   public agregarCiudad(ciudadNombre: string): void {
