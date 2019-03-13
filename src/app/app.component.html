@@ -1,8 +1,20 @@
 
 <h1>App-Clima</h1>
 Ciudad : <input #miCiudad><br>
-<button (click)="agregarCiudad(miCiudad.value)">Añadir</button>
-{{ ciudades[0] }}
+<button (click)="agregarCiudad(miCiudad.value); miCiudad.value = ''">Añadir</button>
+
 <app-ciudades [alexis]="ciudades"></app-ciudades>
+
+<div class="container">
+    <ul>
+    <li *ngFor= "let animal of animales">
+        {{ animal }}
+    </li>
+    <!-- <li>Java</li>
+    <li>Gatitos</li> -->
+    </ul>
+</div>
+
+
 
 <router-outlet></router-outlet>

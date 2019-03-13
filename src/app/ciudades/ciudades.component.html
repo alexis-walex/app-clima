@@ -1,3 +1,1 @@
-<app-ciudad [miCiudad]="alexis[0]"></app-ciudad>
-<app-ciudad [miCiudad]="alexis[1]"></app-ciudad>
-<app-ciudad [miCiudad]="alexis[2]"></app-ciudad>
+<app-ciudad *ngFor="let ciudad of alexis" [miCiudad]="ciudad"></app-ciudad>
