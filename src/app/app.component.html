@@ -1,6 +1,8 @@
+
 <h1>App-Clima</h1>
 Ciudad : <input #miCiudad><br>
 <button (click)="agregarCiudad(miCiudad.value)">Añadir</button>
 {{ ciudades[0] }}
-<app-ciudad></app-ciudad>
+<app-ciudades [alexis]="ciudades"></app-ciudades>
+
 <router-outlet></router-outlet>
