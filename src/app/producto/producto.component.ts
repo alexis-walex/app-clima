@@ -23,9 +23,14 @@ export class ProductoComponent implements OnInit {
       imagen: 'assets/dogo.jpg',
       nombre: 'Alexis 3',
       precio: 150
+    },
+    {
+      imagen: 'assets/dogo.jpg',
+      nombre: 'Alexis 3',
+      precio: 150
     }
   ];
-  constructor() { 
+  constructor() {
     this.producto = this.productos[0];
   }
 
